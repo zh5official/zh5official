@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="200" viewBox="0 0 920 200" fill="none">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="920" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8A00"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="0" y="0" width="920" height="200" rx="18" fill="#0B1220"/>
+
+  <text x="24" y="52" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="22" font-weight="700">Career Flow</text>
+  <text x="24" y="80" fill="#C9D1D9" font-family="Arial, sans-serif" font-size="14">Learn → Practice → Build → Compete → Research → Secure</text>
+
+  <path id="path" d="M40 150 C 160 110, 260 190, 360 150 S 560 110, 680 150 S 820 190, 880 150" stroke="url(#g)" stroke-width="6" stroke-linecap="round" opacity="0.95"/>
+
+  <circle r="8" fill="#FF8A00" filter="url(#glow)">
+    <animateMotion dur="3.5s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#path"/>
+    </animateMotion>
+  </circle>
+
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="40" cy="150" r="6"/>
+    <circle cx="360" cy="150" r="6"/>
+    <circle cx="680" cy="150" r="6"/>
+    <circle cx="880" cy="150" r="6"/>
+  </g>
+</svg>
