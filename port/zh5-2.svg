@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="140" viewBox="0 0 700 140">
+  <defs>
+    <linearGradient id="g2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4500"/>
+      <stop offset="50%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <filter id="glow2">
+      <feGaussianBlur stdDeviation="3"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="700" height="140" fill="#0B1220" rx="10"/>
+  <g filter="url(#glow2)">
+    <rect x="20" y="25" width="660" height="90" fill="none" stroke="url(#g2)" stroke-width="4" rx="8"/>
+    <text x="350" y="85" font-family="'Courier New', monospace" font-size="64" fill="url(#g2)" text-anchor="middle" font-weight="900">Z H 5</text>
+    <text x="350" y="115" font-family="'Courier New', monospace" font-size="20" fill="#FFFFFF" text-anchor="middle" letter-spacing="8">O F F I C I A L</text>
+  </g>
+</svg>

@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="160" viewBox="0 0 800 160">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="50%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FFA726"/>
+    </linearGradient>
+    <linearGradient id="neonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4500"/>
+      <stop offset="50%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <linearGradient id="cyberGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00FF88"/>
+      <stop offset="100%" stop-color="#00CC6A"/>
+    </linearGradient>
+    <linearGradient id="matrixGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF00"/>
+      <stop offset="50%" stop-color="#00CC00"/>
+      <stop offset="100%" stop-color="#008800"/>
+    </linearGradient>
+    <linearGradient id="termGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#00FF00"/>
+    </linearGradient>
+    
+    <!-- Filters -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="neonGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="160" fill="#0B1220" rx="12"/>
+  <rect x="10" y="10" width="780" height="140" fill="none" stroke="#1a2332" stroke-width="2" rx="8"/>
+  
+  <!-- === STYLE 1: Classic Pixel Blocks (0-2s) === -->
+  <g opacity="1">
+    <animate attributeName="opacity" values="1;1;0;0;0;0;0;1" keyTimes="0;0.15;0.2;0.4;0.6;0.8;0.95;1" dur="10s" repeatCount="indefinite"/>
+    
+    <!-- Z -->
+    <g fill="url(#orangeGrad)" filter="url(#glow)">
+      <rect x="50" y="35" width="70" height="12"/>
+      <rect x="100" y="47" width="12" height="12"/>
+      <rect x="88" y="59" width="12" height="12"/>
+      <rect x="76" y="71" width="12" height="12"/>
+      <rect x="64" y="83" width="12" height="12"/>
+      <rect x="52" y="95" width="12" height="12"/>
+      <rect x="50" y="107" width="70" height="12"/>
+    </g>
+    <!-- H -->
+    <g fill="url(#orangeGrad)" filter="url(#glow)">
+      <rect x="140" y="35" width="12" height="84"/>
+      <rect x="152" y="71" width="46" height="12"/>
+      <rect x="198" y="35" width="12" height="84"/>
+    </g>
+    <!-- 5 -->
+    <g fill="url(#orangeGrad)" filter="url(#glow)">
+      <rect x="230" y="35" width="58" height="12"/>
+      <rect x="230" y="47" width="12" height="24"/>
+      <rect x="242" y="65" width="34" height="12"/>
+      <rect x="276" y="77" width="12" height="24"/>
+      <rect x="230" y="107" width="46" height="12"/>
+    </g>
+    <!-- OFFICIAL -->
+    <text x="550" y="90" font-family="monospace" font-size="28" fill="#FFFFFF" text-anchor="middle" letter-spacing="4" filter="url(#glow)">OFFICIAL</text>
+  </g>
+  
+  <!-- === STYLE 2: Neon Glow Outline (2-4s) === -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0;0;0" keyTimes="0;0.15;0.2;0.4;0.45;0.6;0.8;1" dur="10s" repeatCount="indefinite"/>
+    
+    <rect x="30" y="25" width="740" height="110" fill="none" stroke="url(#neonGrad)" stroke-width="6" rx="15" filter="url(#neonGlow)">
+      <animate attributeName="stroke-width" values="6;8;6" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <text x="400" y="85" font-family="'Courier New', monospace" font-size="72" fill="url(#neonGrad)" text-anchor="middle" font-weight="900" filter="url(#neonGlow)">Z H 5</text>
+    <text x="400" y="115" font-family="'Courier New', monospace" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="8">OFFICIAL</text>
+    
+    <!-- Animated corner accents -->
+    <g stroke="#FF8A00" stroke-width="3" fill="none">
+      <line x1="30" y1="45" x2="50" y2="25">
+        <animate attributeName="x2" values="50;60;50" dur="0.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="770" y1="45" x2="750" y2="25">
+        <animate attributeName="x2" values="750;740;750" dur="0.5s" repeatCount="indefinite"/>
+      </line>
+    </g>
+  </g>
+  
+  <!-- === STYLE 3: Glitch/Scanline Effect (4-6s) === -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;1;1;0;0" keyTimes="0;0.15;0.4;0.45;0.6;0.8;0.85;1" dur="10s" repeatCount="indefinite"/>
+    
+    <!-- Scanlines -->
+    <g stroke="#FF8A00" stroke-width="1" opacity="0.3">
+      <line x1="0" y1="50" x2="800" y2="50"/>
+      <line x1="0" y1="70" x2="800" y2="70"/>
+      <line x1="0" y1="90" x2="800" y2="90"/>
+      <line x1="0" y1="110" x2="800" y2="110"/>
+    </g>
+    
+    <!-- Glitch text layers -->
+    <g>
+      <text x="398" y="88" font-family="monospace" font-size="64" fill="#FF0040" opacity="0.5" text-anchor="middle" font-weight="bold">
+        Z H 5
+        <animate attributeName="x" values="398;402;398" dur="0.1s" repeatCount="indefinite"/>
+      </text>
+      <text x="402" y="88" font-family="monospace" font-size="64" fill="#00FF88" opacity="0.5" text-anchor="middle" font-weight="bold">
+        Z H 5
+        <animate attributeName="x" values="402;398;402" dur="0.1s" repeatCount="indefinite"/>
+      </text>
+      <text x="400" y="88" font-family="monospace" font-size="64" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Z H 5</text>
+    </g>
+    
+    <text x="400" y="120" font-family="monospace" font-size="18" fill="#FF8A00" text-anchor="middle" letter-spacing="6">OFFICIAL</text>
+    
+    <!-- Glitch blocks -->
+    <rect x="100" y="60" width="40" height="8" fill="#FF8A00" opacity="0.6">
+      <animate attributeName="x" values="100;600;100" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.6;0" dur="0.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- === STYLE 4: Matrix/Binary Rain (6-8s) === -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;1;1;0;0" keyTimes="0;0.15;0.4;0.6;0.65;0.8;0.85;0.95;0.98;1" dur="10s" repeatCount="indefinite"/>
+    
+    <!-- Binary rain background -->
+    <g fill="#00FF00" font-family="monospace" font-size="12" opacity="0.3">
+      <text x="50" y="40">10110</text>
+      <text x="100" y="60">01011</text>
+      <text x="150" y="50">11001</text>
+      <text x="200" y="70">01101</text>
+      <text x="600" y="45">10101</text>
+      <text x="650" y="65">01010</text>
+      <text x="700" y="55">11100</text>
+      <text x="750" y="75">00101</text>
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,20;0,0" dur="1s" repeatCount="indefinite"/>
+    </g>
+    
+    <rect x="200" y="30" width="400" height="100" fill="#0B1220" stroke="#00FF00" stroke-width="3" rx="10"/>
+    <text x="400" y="80" font-family="'Courier New', monospace" font-size="56" fill="url(#matrixGrad)" text-anchor="middle" font-weight="bold">Z H 5</text>
+    <text x="400" y="110" font-family="'Courier New', monospace" font-size="18" fill="#00FF00" text-anchor="middle" letter-spacing="4">OFFICIAL</text>
+    
+    <!-- Cursor blink -->
+    <rect x="520" y="70" width="12" height="20" fill="#00FF00">
+      <animate attributeName="opacity" values="1;0;1" dur="0.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- === STYLE 5: Terminal/Command Prompt (8-10s) === -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;0;0;0;0;0;0;1;1" keyTimes="0;0.15;0.4;0.6;0.8;0.85;0.95;0.98;1;1" dur="10s" repeatCount="indefinite"/>
+    
+    <!-- Terminal window -->
+    <rect x="150" y="20" width="500" height="120" fill="#1a1a1a" stroke="#333" stroke-width="2" rx="8"/>
+    <rect x="150" y="20" width="500" height="25" fill="#333" rx="8"/>
+    <rect x="150" y="35" width="500" height="8" fill="#333"/>
+    
+    <!-- Window controls -->
+    <circle cx="170" cy="32" r="6" fill="#FF5F56"/>
+    <circle cx="190" cy="32" r="6" fill="#FFBD2E"/>
+    <circle cx="210" cy="32" r="6" fill="#27C93F"/>
+    
+    <!-- Terminal content -->
+    <text x="170" y="65" font-family="'Courier New', monospace" font-size="14" fill="#00FF00">$ ./zh5official</text>
+    <text x="170" y="90" font-family="'Courier New', monospace" font-size="36" fill="#00FF00" font-weight="bold">
+      <animate attributeName="textContent" values="|;Z H 5;Z H 5;Z H 5;Z H 5" keyTimes="0;0.1;0.2;0.9;1" dur="2s" repeatCount="indefinite"/>
+    </text>
+    <text x="170" y="115" font-family="'Courier New', monospace" font-size="16" fill="#FFFFFF">OFFICIAL</text>
+    <text x="170" y="135" font-family="'Courier New', monospace" font-size="12" fill="#888">[root@zh5 ~]# _</text>
+    
+    <!-- Blinking cursor -->
+    <rect x="290" y="125" width="8" height="14" fill="#00FF00">
+      <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

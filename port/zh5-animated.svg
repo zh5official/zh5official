@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="140" viewBox="0 0 700 140">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#FF8A00"/>
+    </linearGradient>
+    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF4500"/>
+      <stop offset="50%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <linearGradient id="grad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FF4500"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect width="700" height="140" fill="#0B1220" rx="10"/>
+  
+  <!-- Style 1 -->
+  <g opacity="1">
+    <text x="350" y="85" font-family="monospace" font-size="72" fill="url(#grad1)" filter="url(#glow)" text-anchor="middle" font-weight="bold">
+      Z H 5
+      <animate attributeName="opacity" values="1;0;0;0;0;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="350" y="125" font-family="monospace" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">
+      O F F I C I A L
+      <animate attributeName="opacity" values="1;0;0;0;0;1" dur="8s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <!-- Style 2 -->
+  <g opacity="0">
+    <rect x="20" y="25" width="660" height="90" fill="none" stroke="url(#grad2)" stroke-width="4" rx="8"/>
+    <text x="350" y="85" font-family="'Courier New', monospace" font-size="64" fill="url(#grad2)" text-anchor="middle" font-weight="900">
+      Z H 5
+      <animate attributeName="opacity" values="0;1;0;0;0;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="350" y="115" font-family="'Courier New', monospace" font-size="20" fill="#FFFFFF" text-anchor="middle" letter-spacing="8">
+      O F F I C I A L
+      <animate attributeName="opacity" values="0;1;0;0;0;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <!-- Style 3 -->
+  <g opacity="0">
+    <text x="350" y="70" font-family="monospace" font-size="48" font-weight="bold" fill="url(#grad1)" text-anchor="middle">
+      Z H 5
+      <animate attributeName="opacity" values="0;0;1;0;0;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="350" y="110" font-family="monospace" font-size="20" fill="#FFFFFF" text-anchor="middle">
+      O F F I C I A L
+      <animate attributeName="opacity" values="0;0;1;0;0;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <line x1="50" y1="100" x2="650" y2="100" stroke="#FF8A00" stroke-width="2">
+      <animate attributeName="opacity" values="0;0;1;0;0;0" dur="8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Style 4 -->
+  <g opacity="0">
+    <rect x="10" y="10" width="680" height="120" fill="none" stroke="url(#grad3)" stroke-width="3" rx="15"/>
+    <text x="350" y="55" font-family="'Courier New', monospace" font-size="56" fill="url(#grad3)" filter="url(#glow)" text-anchor="middle" font-weight="bold">
+      Z H 5
+      <animate attributeName="opacity" values="0;0;0;1;0;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="350" y="100" font-family="'Courier New', monospace" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">
+      O F F I C I A L
+      <animate attributeName="opacity" values="0;0;0;1;0;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <line x1="100" y1="115" x2="600" y2="115" stroke="#FF8A00" stroke-width="2">
+      <animate attributeName="opacity" values="0;0;0;1;0;0" dur="8s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Style 5 -->
+  <g opacity="0">
+    <text x="350" y="85" font-family="'Courier New', monospace" font-size="60" fill="#FFD700" text-anchor="middle" font-weight="900">
+      Z H 5
+      <animate attributeName="opacity" values="0;0;0;0;1;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+    <text x="350" y="120" font-family="'Courier New', monospace" font-size="18" fill="#FFFFFF" text-anchor="middle" letter-spacing="10">
+      O F F I C I A L
+      <animate attributeName="opacity" values="0;0;0;0;1;0" dur="8s" repeatCount="indefinite"/>
+    </text>
+  </g>
+</svg>

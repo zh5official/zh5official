@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="140" viewBox="0 0 700 140">
+  <defs>
+    <linearGradient id="g3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FF4500"/>
+    </linearGradient>
+  </defs>
+  <rect width="700" height="140" fill="#0B1220"/>
+  <g fill="url(#g3)">
+    <rect x="30" y="30" width="20" height="80"/>
+    <rect x="55" y="30" width="20" height="20"/>
+    <rect x="55" y="60" width="20" height="20"/>
+    <rect x="55" y="90" width="20" height="20"/>
+    <rect x="90" y="30" width="20" height="80"/>
+    <rect x="115" y="60" width="25" height="20"/>
+    <rect x="145" y="30" width="20" height="80"/>
+  </g>
+  <g fill="#FFFFFF">
+    <rect x="200" y="30" width="15" height="80"/>
+    <rect x="220" y="30" width="35" height="15"/>
+    <rect x="220" y="95" width="35" height="15"/>
+    <rect x="260" y="30" width="15" height="80"/>
+    <rect x="280" y="30" width="35" height="15"/>
+    <rect x="280" y="55" width="25" height="15"/>
+    <rect x="320" y="30" width="15" height="80"/>
+    <rect x="340" y="30" width="35" height="15"/>
+    <rect x="340" y="95" width="35" height="15"/>
+    <rect x="385" y="30" width="15" height="80"/>
+    <rect x="410" y="30" width="15" height="80"/>
+    <rect x="435" y="30" width="30" height="15"/>
+    <rect x="435" y="95" width="30" height="15"/>
+    <rect x="475" y="30" width="15" height="80"/>
+    <rect x="500" y="30" width="30" height="15"/>
+    <rect x="500" y="95" width="30" height="15"/>
+    <rect x="545" y="30" width="15" height="80"/>
+    <rect x="570" y="30" width="15" height="80"/>
+    <rect x="595" y="30" width="30" height="15"/>
+    <rect x="595" y="95" width="30" height="15"/>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="140" viewBox="0 0 700 140" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF6B00"/>
+      <stop offset="100%" stop-color="#FF8A00"/>
+    </linearGradient>
+    <filter id="glow1">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="700" height="140" fill="#0B1220" rx="10"/>
+  <text x="350" y="90" font-family="monospace" font-size="72" fill="url(#g1)" filter="url(#glow1)" text-anchor="middle" font-weight="bold">Z H 5</text>
+  <text x="350" y="125" font-family="monospace" font-size="24" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">O F F I C I A L</text>
+</svg>

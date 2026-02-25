@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="140" viewBox="0 0 700 140">
+  <defs>
+    <linearGradient id="g5" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FF8A00"/>
+      <stop offset="100%" stop-color="#FF4500"/>
+    </linearGradient>
+    <filter id="neon">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="700" height="140" fill="#0B1220"/>
+  <rect x="10" y="10" width="680" height="120" fill="none" stroke="url(#g5)" stroke-width="3" rx="15"/>
+  <text x="350" y="55" font-family="'Courier New', monospace" font-size="56" fill="url(#g5)" filter="url(#neon)" text-anchor="middle" font-weight="bold">Z H 5</text>
+  <text x="350" y="100" font-family="'Courier New', monospace" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="6">O F F I C I A L</text>
+  <line x1="100" y1="115" x2="600" y2="115" stroke="#FF8A00" stroke-width="2"/>
+</svg>
