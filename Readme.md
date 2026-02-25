@@ -21,18 +21,20 @@ Learn • Hack • Secure
 
 ---
 
-## <img src="./port/radar.svg" alt="Stats" width="22" /> Graphs & Stats
+## <img src="./port/radar.svg" alt="Stats" width="22" /> GitHub Stats
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=zh5official&show_icons=true&theme=tokyonight" alt="ZH5Official GitHub Stats" height="160" />
+*Stats will appear here once your GitHub profile has public activity.*
+
+<img src="https://github-readme-stats.vercel.app/api?username=zh5official&show_icons=true&theme=tokyonight&count_private=true&include_all_commits=true" alt="" height="160" />
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=zh5official&theme=tokyonight" alt="ZH5Official GitHub Streak" height="160" />
 
 </div>
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=zh5official&theme=tokyo-night" alt="ZH5Official Activity Graph" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=zh5official&theme=tokyo-night&area=true&hide_border=true" alt="ZH5Official Activity Graph" />
 
 </div>
 
@@ -98,8 +100,7 @@ Tiruvannamalai, Tamil Nadu, India
 - <img src="./port/linkedin.svg" alt="LinkedIn" width="18" /> LinkedIn: https://www.linkedin.com/in/zh5official/  
 - <img src="./port/whatsapp.svg" alt="WhatsApp" width="18" /> WhatsApp Channel: https://whatsapp.com/channel/0029Vb7gPitFCCoM116jcb04  
 - <img src="./port/email.svg" alt="Email" width="18" /> Email: zh5officials.in@gmail.com  
-
-
+- Website: Coming Soon
 ---
 
 ## <img src="./port/disclaimer.svg" alt="Disclaimer" width="22" /> Disclaimer
